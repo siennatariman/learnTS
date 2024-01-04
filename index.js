@@ -12,3 +12,12 @@ arr.pop();
 console.log(arr); // [1,3,5] the array method mutated the array
 name = 'Anna'; // Assignment gives the primitive a new (not mutated) value
 console.log(name);
+// We can set the type we want a variable to be by add ":type"
+// ":type" = type annotation/type signature
+// Ex.
+var id = 5;
+var firstName = 'danny';
+var hasDog = true;
+var unit; // declare variable w/o  assigning a value
+unit = 8;
+// usu best not to explicitly state type, TS automatically infers = type inference
