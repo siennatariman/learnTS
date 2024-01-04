@@ -21,3 +21,8 @@ var hasDog = true;
 var unit; // declare variable w/o  assigning a value
 unit = 8;
 // usu best not to explicitly state type, TS automatically infers = type inference
+// union type = a variable that  can  be assigned  more than one type
+// Ex. 
+var age;
+age = 26;
+age = '26';
