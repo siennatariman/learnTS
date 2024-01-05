@@ -58,9 +58,18 @@ let arr: any[]  = ['hello', 1, true]; // any reverts TS back to JS
 ids.push(6);
 ids.push('7') // ERROR: Argument of  type 'string' is not assignable to parameter of type  'number'
 
-// Union types can beused to define arrays containing multiple types
+// Union types can be used to define arrays containing multiple types
 let person: (string | number | boolean)[] = [1, 'Danny',true];
 person[0] = 100;
 person[1] = {name: 'Danny'} // Error - person array can't contain objects
+
+// Tuples
+	// stricter than regular arrays
+	// an array with fixed size and know datatypes
+
+//Ex.
+let personTwo: [string, number, boolean] = ['Danny', 1, true];
+personTwo[0] = 100; // Error Value at index 0 can only be a string
+
 
 

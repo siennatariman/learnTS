@@ -36,7 +36,13 @@ var books = [{ name: 'Fooled by randomness', author: 'Nassim Taleb' }, { name: '
 var arr = ['hello', 1, true]; // any reverts TS back to JS
 ids.push(6);
 ids.push('7'); // ERROR: Argument of  type 'string' is not assignable to parameter of type  'number'
-// Union types can beused to define arrays containing multiple types
+// Union types can be used to define arrays containing multiple types
 var person = [1, 'Danny', true];
 person[0] = 100;
 person[1] = { name: 'Danny' }; // Error - person array can't contain objects
+// Tuples
+// stricter than regular arrays
+// an array with fixed size and know datatypes
+//Ex.
+var personTwo = ['Danny', 1, true];
+personTwo[0] = 100; // Error Value at index 0 can only be a string
