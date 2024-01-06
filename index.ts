@@ -71,5 +71,36 @@ person[1] = {name: 'Danny'} // Error - person array can't contain objects
 let personTwo: [string, number, boolean] = ['Danny', 1, true];
 personTwo[0] = 100; // Error Value at index 0 can only be a string
 
+// Objects
+
+// Ex.
+	// Declare a variable called personThree with a specific object type annotation
+
+let personThree: {
+	name: string;
+	location: string;
+	isProgrammer: boolean;
+};
+
+	// Assigne personFour to an object with  all the necessary properties and value types
+
+personFour = {
+	name: 'Danny',
+	location: 'UK',
+	isProgrammer: true,
+};
+
+personFour.isProgrammer = 'Yes'; // ERROR: should be a boolean
+
+person = {
+	name:  'John',
+	location: 'US',
+}; // ERROR: missing the isProgrammer property
+
+
+
+
+
+
 
 
