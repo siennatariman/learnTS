@@ -98,7 +98,20 @@ person = {
 }; // ERROR: missing the isProgrammer property
 
 
+// When defining the signature of an object, you will usually use an interface
+	// Useful if we need to check that multiple objects have the same specific properties and value types
 
+interface PersonFive {
+	name: string;
+	location: string;
+	isProgrammer: boolean;
+};
+
+let person1: PersonFive = {
+	name: 'Jacoob',
+	location: 'Australia',
+	isProgrammer: false,
+};
 
 
 

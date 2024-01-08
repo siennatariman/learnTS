@@ -61,3 +61,9 @@ person = {
     name: 'John',
     location: 'US',
 }; // ERROR: missing the isProgrammer property
+;
+var person1 = {
+    name: 'Jacoob',
+    location: 'Australia',
+    isProgrammer: false,
+};
