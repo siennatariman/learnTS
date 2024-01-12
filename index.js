@@ -76,3 +76,10 @@ var sayStuff = {
 };
 console.log(sayStuff.sayHi('Heisenberg'));
 console.log(sayStuff.sayBye('Heisenberg'));
+// Functions
+// Define a function called circle that takes a diam variable of type number, and returns a string
+function circle(diameter) {
+    return 'The circumference is ' + Math.PI * diameter;
+}
+;
+console.log(circle(10)); // Circumference is 31.415
