@@ -138,3 +138,14 @@ function circle(diameter:number): string {
 };
 
 console.log(circle(10)); // Circumference is 31.415
+
+// Optional Parameters
+const add = (a: number, b: number, c?: number | string) => {
+	console.log(c);
+
+	return a+b;
+};
+
+console.log(add(8,2,'I could pass a number, string, or nothing here!'));
+//I could pass a number, string, or nothing here!
+//10

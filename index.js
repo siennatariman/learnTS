@@ -83,3 +83,11 @@ function circle(diameter) {
 }
 ;
 console.log(circle(10)); // Circumference is 31.415
+// Optional Parameters
+var add = function (a, b, c) {
+    console.log(c);
+    return a + b;
+};
+console.log(add(8, 2, 'I could pass a number, string, or nothing here!'));
+//I could pass a number, string, or nothing here!
+//10
